@@ -1,0 +1,29 @@
+# Datos iniciales para Redis
+# Ejecutar con: redis-cli < seed_data.redis
+
+# Configuración de doctores/personas
+HSET doctor:zen nombre "Guía Sofía" precio "200" disponible "true"
+HSET doctor:profesional nombre "Dr. Marco" precio "500" disponible "true"
+HSET doctor:amigo nombre "Alex Amigo" precio "300" disponible "true"
+
+# Usuario de demostración
+SET usuario:demo:saldo 1500
+HSET usuario:demo:perfil nombre "Usuario Demo" email "demo@serenia.com" plan "premium"
+
+# Sesiones de ejemplo (hash de sesión)
+# HSET sesion:1 usuario "demo" persona "zen" inicio "2024-01-01T10:00:00" estado "completada"
+
+# Emociones detectadas (lista ordenada por timestamp)
+# ZADD emociones:demo 1704103200 "calma"
+# ZADD emociones:demo 1704106800 "ansiedad"
+
+# Entornos generados (cache)
+# HSET entorno:playa descripcion "Playa tranquila al atardecer" url "https://..." persona "zen"
+
+# Citas programadas (sorted set por fecha)
+# ZADD citas:demo 1704190800 "cita:1"
+# HSET cita:1 fecha "2024-01-02T15:00:00" persona "profesional" estado "confirmada"
+
+# TODO: Añadir más datos de seed según necesidades
+# TODO: Configurar TTL para datos temporales
+# TODO: Añadir índices para búsquedas

@@ -1,0 +1,41 @@
+/**
+ * global.css
+ * Estilos globales de SerenIA
+ */
+
+/* TODO: Definir variables CSS */
+:root {
+  --color-primary: #TODO;
+  --color-secondary: #TODO;
+  --color-background: #TODO;
+  --color-text: #TODO;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  /* TODO: Añadir estilos base */
+}
+
+/* TODO: Añadir estilos para containers */
+.landing-page,
+.dashboard,
+.session,
+.not-found {
+  /* TODO: Implementar layouts */
+}
+
+/* TODO: Añadir estilos para componentes */
+.avatar-container {
+  /* TODO: Implementar estilos del avatar */
+}
+
+.controls {
+  /* TODO: Implementar estilos de controles */
+}

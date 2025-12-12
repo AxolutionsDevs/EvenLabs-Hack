@@ -1,0 +1,63 @@
+{
+    "agent_config": {
+        "conversation": {
+            "language": "es",
+            "max_duration_seconds": 3600,
+            "client_events": {
+                "on_status_change": true,
+                "on_latency_measurement": true
+            }
+        },
+        "tts": {
+            "model_id": "eleven_turbo_v2_5",
+            "voice_settings": {
+                "stability": 0.7,
+                "similarity_boost": 0.75,
+                "style": 0.5,
+                "use_speaker_boost": true
+            }
+        },
+        "llm": {
+            "model": "gpt-4",
+            "temperature": 0.8,
+            "max_tokens": 500,
+            "system_prompt": "TODO: Cargar desde ai/prompts/system_agent.md"
+        },
+        "tools": [
+            {
+                "name": "gestionar_cita",
+                "webhook_url": "TODO: URL de n8n webhook",
+                "description": "Gestiona citas del usuario"
+            },
+            {
+                "name": "cambiar_entorno",
+                "webhook_url": "TODO: URL de n8n webhook",
+                "description": "Cambia el entorno virtual según preferencias"
+            }
+        ]
+    },
+    "personas": {
+        "zen": {
+            "agent_id": "TODO",
+            "voice_id": "TODO",
+            "system_prompt_override": "TODO: Cargar desde ai/personas/sofia_zen.md"
+        },
+        "profesional": {
+            "agent_id": "TODO",
+            "voice_id": "TODO",
+            "system_prompt_override": "TODO: Cargar desde ai/personas/marco_profesional.md"
+        },
+        "amigo": {
+            "agent_id": "TODO",
+            "voice_id": "TODO",
+            "system_prompt_override": "TODO: Cargar desde ai/personas/alex_amigo.md"
+        }
+    },
+    "TODO": [
+        "Crear agentes en ElevenLabs dashboard",
+        "Seleccionar voice IDs apropiados",
+        "Configurar webhooks de n8n",
+        "Testear latencia y calidad",
+        "Ajustar parámetros de voz por persona"
+    ]
+}

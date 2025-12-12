@@ -1,0 +1,124 @@
+{
+    "personas": [
+        {
+            "id": "TODO_PERSONA_ZEN_ID",
+            "name": "Sofía Zen",
+            "description": "Guía calmada y empática para relajación",
+            "avatar_config": {
+                "model": "standard",
+                "appearance": {
+                    "gender": "female",
+                    "age_range": "30-40",
+                    "ethnicity": "latina",
+                    "hair_color": "dark_brown",
+                    "hair_style": "long_loose",
+                    "clothing_style": "casual_natural",
+                    "clothing_colors": [
+                        "beige",
+                        "white",
+                        "soft_green"
+                    ]
+                },
+                "personality": {
+                    "expressiveness": 0.6,
+                    "animation_speed": "slow",
+                    "gesture_frequency": "low",
+                    "smile_intensity": "subtle"
+                }
+            },
+            "voice_sync": {
+                "lip_sync_enabled": true,
+                "emotion_mapping": {
+                    "calm": "serene_expression",
+                    "empathy": "warm_smile",
+                    "listening": "gentle_nod"
+                }
+            }
+        },
+        {
+            "id": "TODO_PERSONA_PROFESIONAL_ID",
+            "name": "Dr. Marco",
+            "description": "Mentor profesional y analítico",
+            "avatar_config": {
+                "model": "standard",
+                "appearance": {
+                    "gender": "male",
+                    "age_range": "35-45",
+                    "ethnicity": "latino",
+                    "hair_color": "dark",
+                    "hair_style": "short_professional",
+                    "clothing_style": "business_casual",
+                    "clothing_colors": [
+                        "navy",
+                        "white",
+                        "gray"
+                    ],
+                    "accessories": [
+                        "glasses_optional"
+                    ]
+                },
+                "personality": {
+                    "expressiveness": 0.7,
+                    "animation_speed": "moderate",
+                    "gesture_frequency": "medium",
+                    "posture": "upright_professional"
+                }
+            },
+            "voice_sync": {
+                "lip_sync_enabled": true,
+                "emotion_mapping": {
+                    "analytical": "thoughtful_expression",
+                    "encouraging": "supportive_smile",
+                    "listening": "attentive_nod"
+                }
+            }
+        },
+        {
+            "id": "TODO_PERSONA_AMIGO_ID",
+            "name": "Alex Amigo",
+            "description": "Amigo cercano y auténtico",
+            "avatar_config": {
+                "model": "standard",
+                "appearance": {
+                    "gender": "neutral",
+                    "age_range": "25-35",
+                    "ethnicity": "latino",
+                    "hair_color": "brown",
+                    "hair_style": "casual_modern",
+                    "clothing_style": "casual_trendy",
+                    "clothing_colors": [
+                        "various",
+                        "modern_palette"
+                    ]
+                },
+                "personality": {
+                    "expressiveness": 0.85,
+                    "animation_speed": "dynamic",
+                    "gesture_frequency": "high",
+                    "smile_intensity": "frequent"
+                }
+            },
+            "voice_sync": {
+                "lip_sync_enabled": true,
+                "emotion_mapping": {
+                    "friendly": "warm_smile",
+                    "concerned": "empathetic_expression",
+                    "playful": "light_laugh"
+                }
+            }
+        }
+    ],
+    "global_settings": {
+        "quality": "high",
+        "background_type": "dynamic",
+        "lighting": "natural_soft",
+        "camera_angle": "face_medium_shot"
+    },
+    "TODO": [
+        "Crear personas en Anam dashboard",
+        "Obtener persona IDs",
+        "Configurar apariencias específicas",
+        "Testear sincronización labial",
+        "Ajustar expresividad por persona"
+    ]
+}

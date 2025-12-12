@@ -1,0 +1,46 @@
+{
+    "name": "gestionar_cita",
+    "description": "Gestiona citas y acciones del usuario con el agente emocional",
+    "schema": {
+        "type": "object",
+        "properties": {
+            "action": {
+                "type": "string",
+                "enum": [
+                    "crear",
+                    "modificar",
+                    "cancelar",
+                    "consultar"
+                ],
+                "description": "Acción a realizar con la cita"
+            },
+            "email": {
+                "type": "string",
+                "format": "email",
+                "description": "Email del usuario para confirmación"
+            },
+            "datetime": {
+                "type": "string",
+                "format": "date-time",
+                "description": "Fecha y hora de la cita en formato ISO 8601"
+            },
+            "persona": {
+                "type": "string",
+                "enum": [
+                    "zen",
+                    "profesional",
+                    "amigo"
+                ],
+                "description": "Tipo de persona para la sesión"
+            },
+            "notas": {
+                "type": "string",
+                "description": "Notas adicionales sobre la cita"
+            }
+        },
+        "required": [
+            "action"
+        ]
+    },
+    "TODO": "Configurar en ElevenLabs agent dashboard"
+}

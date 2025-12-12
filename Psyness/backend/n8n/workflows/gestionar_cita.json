@@ -1,0 +1,58 @@
+{
+    "name": "Gestionar Cita",
+    "nodes": [
+        {
+            "parameters": {},
+            "name": "Webhook",
+            "type": "n8n-nodes-base.webhook",
+            "typeVersion": 1,
+            "position": [
+                250,
+                300
+            ],
+            "webhookId": "TODO"
+        },
+        {
+            "parameters": {},
+            "name": "TODO: Validar Datos",
+            "type": "n8n-nodes-base.function",
+            "typeVersion": 1,
+            "position": [
+                450,
+                300
+            ]
+        },
+        {
+            "parameters": {},
+            "name": "TODO: Consultar Redis",
+            "type": "n8n-nodes-base.redis",
+            "typeVersion": 1,
+            "position": [
+                650,
+                300
+            ]
+        },
+        {
+            "parameters": {},
+            "name": "TODO: Crear/Actualizar Cita",
+            "type": "n8n-nodes-base.redis",
+            "typeVersion": 1,
+            "position": [
+                850,
+                300
+            ]
+        },
+        {
+            "parameters": {},
+            "name": "TODO: Responder al Cliente",
+            "type": "n8n-nodes-base.respondToWebhook",
+            "typeVersion": 1,
+            "position": [
+                1050,
+                300
+            ]
+        }
+    ],
+    "connections": {},
+    "TODO": "Completar configuración de nodos y conexiones"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "psyness-frontend",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Frontend de Psyness - Agente emocional con avatares y voz",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "@clerk/clerk-react": "^4.30.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.0",
+    "vite": "^5.0.0"
+  }
+}

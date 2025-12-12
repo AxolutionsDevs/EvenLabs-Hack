@@ -1,0 +1,69 @@
+{
+    "name": "Generar Entorno Virtual",
+    "nodes": [
+        {
+            "parameters": {},
+            "name": "Webhook",
+            "type": "n8n-nodes-base.webhook",
+            "typeVersion": 1,
+            "position": [
+                250,
+                300
+            ],
+            "webhookId": "TODO"
+        },
+        {
+            "parameters": {},
+            "name": "TODO: Recibir Preferencias",
+            "type": "n8n-nodes-base.function",
+            "typeVersion": 1,
+            "position": [
+                450,
+                300
+            ]
+        },
+        {
+            "parameters": {},
+            "name": "TODO: Generar Prompt para IA",
+            "type": "n8n-nodes-base.function",
+            "typeVersion": 1,
+            "position": [
+                650,
+                300
+            ]
+        },
+        {
+            "parameters": {},
+            "name": "TODO: Generar Imagen/Entorno",
+            "type": "n8n-nodes-base.httpRequest",
+            "typeVersion": 1,
+            "position": [
+                850,
+                300
+            ],
+            "notes": "Llamar a API de generación de imágenes"
+        },
+        {
+            "parameters": {},
+            "name": "TODO: Guardar URL en Redis",
+            "type": "n8n-nodes-base.redis",
+            "typeVersion": 1,
+            "position": [
+                1050,
+                300
+            ]
+        },
+        {
+            "parameters": {},
+            "name": "TODO: Retornar Entorno",
+            "type": "n8n-nodes-base.respondToWebhook",
+            "typeVersion": 1,
+            "position": [
+                1250,
+                300
+            ]
+        }
+    ],
+    "connections": {},
+    "TODO": "Completar configuración de generación de entornos"
+}
